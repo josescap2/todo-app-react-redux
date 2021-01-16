@@ -1,5 +1,11 @@
+import { useSelector } from 'react-redux';
+
 export default function DeleteAll() {
-  return (
+  // SELECTOR
+  let tab = useSelector(state => state.tab);
+
+  // RETURN
+  return ( tab === 3 && (
     <div className="dall">
       <button className="dall--button">
         <span class="material-icons">
@@ -8,5 +14,5 @@ export default function DeleteAll() {
         DeleteAll
       </button>
     </div>
-  );
+  ));
 }

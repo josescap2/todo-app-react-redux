@@ -1,27 +1,29 @@
+import { useSelector } from 'react-redux';
+
 import Todo from './../Todo/Todo';
 
-let todos = [
-  {
-    todo: "Do Something",
-    checked: false
-  },
-  {
-    todo: "Learn about DOM",
-    checked: false
-  },
-  {
-    todo: "Do homework",
-    checked: true
-  }
-]
-
 export default function Todos() {
+  // SELECTOR
+  let todos = useSelector(state => state.todos);
+  let tab = useSelector(state => state.tab)
+
+  // RETURN
   return (
     <div className="todos">
       {
-        todos.map((e, i) => (
-          <Todo key={i} todo={e}/>
-        ))
+        todos.map((e, i) => ( tab === 1 && (
+          <Todo key={i} todo={e} />
+        ) ) )
+      }
+      {
+        todos.map((e, i) => ( tab === 2 && !e.checked && (
+          <Todo key={i} todo={e} />
+        ) ) )
+      }
+      {
+        todos.map((e, i) => ( tab === 3 && e.checked && (
+          <Todo key={i} todo={e} />
+        ) ) )
       }
     </div>
   );
