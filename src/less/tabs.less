@@ -1,0 +1,28 @@
+.tabs {
+  padding: 1.125rem;
+  border-bottom: 1px solid @secondary;
+  display: flex;
+  justify-content: space-between;
+
+  .tabs--button {
+    background: none;
+    font-size: .875rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: @primary;
+    border: none;
+    width: 10rem;
+    transition: all ease-in-out .3s;
+    
+    &:focus {
+      outline: none;
+      color: @blue;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      color: @blue;
+      font-size: 1rem;
+    }
+  }
+}

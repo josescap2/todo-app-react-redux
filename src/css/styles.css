@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+.layout {
+  width: 40rem;
+  margin: 32px auto 0;
+}
+.layout .title {
+  margin-bottom: 2.5rem;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.tabs {
+  padding: 1.125rem;
+  border-bottom: 1px solid #BDBDBD;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs .tabs--button {
+  background: none;
+  font-size: 0.875rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333333;
+  border: none;
+  width: 10rem;
+  transition: all ease-in-out 0.3s;
+}
+.tabs .tabs--button:focus {
+  outline: none;
+  color: #2F80ED;
+  font-size: 1rem;
+}
+.tabs .tabs--button:hover {
+  color: #2F80ED;
+  font-size: 1rem;
+}
+.input {
+  display: flex;
+  padding: 1.125rem 0;
+  justify-content: space-between;
+}
+.input .input--field {
+  width: 31.5rem;
+  padding: 1.25rem 0.75rem;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.input .input--field:focus {
+  outline: none;
+  border: 1px solid #2F80ED;
+}
+.input .input--button {
+  width: 7rem;
+  padding: 1.25rem;
+  background: #2F80ED;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  border-radius: 0.75rem;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+}
+.input .input--button:focus {
+  outline: none;
+}
+.todos {
+  padding: 0.75rem 0;
+}
+.todos .todo {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+.todos .todo .left {
+  display: flex;
+}
+.todos .todo .left .todo--check {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+.todos .todo .left .todo--text {
+  font-size: 1.125rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #000000;
+}
+.todos .todo .right .todo--delete {
+  border: none;
+  background: none;
+  color: #BDBDBD;
+}
+.todos .todo .right .todo--delete:hover {
+  color: #EB5757;
+}
+.todos .todo .right .todo--delete:focus {
+  outline: none;
+}
+.dall {
+  display: flex;
+  justify-content: flex-end;
+}
+.dall .dall--button {
+  color: #FFFFFF;
+  background: #EB5757;
+  padding: 0.75rem 1.625rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.dall .dall--button:focus {
+  outline: none;
+}
+.dall .dall--button span {
+  font-size: 0.875rem;
+}
+body {
+  font-size: 16px;
+}

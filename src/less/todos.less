@@ -1,0 +1,44 @@
+.todos {
+  padding: .75rem 0;
+
+  .todo {
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+
+      .todo--check {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: .5rem;
+      }
+  
+      .todo--text {
+        font-size: 1.125rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        line-height: 1.375rem;
+        color: @black;
+      }
+    }
+
+    .right {
+
+      .todo--delete {
+        border: none;
+        background: none;
+        color: @secondary;
+
+        &:hover {
+          color: @red;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
