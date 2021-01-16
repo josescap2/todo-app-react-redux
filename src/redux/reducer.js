@@ -31,6 +31,11 @@ function rootReducer(state = initialState, action = null) {
         ...state,
         todos: [...filtered]
       };
+    case 'DELETE_ALL':
+      return {
+        ...state,
+        todos: state.todos.filter((e) => !e.checked)
+      }
     default:
       return state;
   }

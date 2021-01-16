@@ -15,3 +15,7 @@ export function toggleCheck(id) {
 export function deleteTodo(id) {
   return { type: 'DELETE_TODO', payload: id};
 }
+
+export function deleteAllCompleted() {
+  return { type: 'DELETE_ALL' }
+}
