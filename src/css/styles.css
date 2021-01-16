@@ -153,6 +153,28 @@
 .dall .dall--button span {
   font-size: 0.875rem;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  color: #A9A9A9;
+}
+.footer p a {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: #2F80ED;
+  text-decoration: underline;
+}
 button {
   cursor: pointer;
 }
